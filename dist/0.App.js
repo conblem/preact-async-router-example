@@ -1,0 +1,1 @@
+exports.ids=[0],exports.modules={5:function(n,t,e){"use strict";e.r(t);var c=e(0),r=e(1);t.default=Object(r.c)(function(n){return{count:n.count}},function(n){return{increment:n.increment}})(function(n){var t=n.count,e=n.increment;return Object(c.b)("div",null,Object(c.b)("button",{onClick:e},"+"),t)})}};

@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[0],{5:function(n,t,c){"use strict";c.r(t);var e=c(0),u=c(1);t.default=Object(u.b)(function(n){return{count:n.count}},function(n){return{increment:n.increment}})(function(n){var t=n.count,c=n.increment;return Object(e.b)("div",null,Object(e.b)("button",{onClick:c},"+"),t)})}}]);
