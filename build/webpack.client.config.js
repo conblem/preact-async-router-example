@@ -6,7 +6,7 @@ module.exports = merge(baseconfig, {
   entry: ["./src/client.js"],
   output: {
     path: __dirname + "/../dist",
-    publicPath: "/",
+    publicPath: "/dist/",
     filename: "bundle.js"
   },
   devServer: {

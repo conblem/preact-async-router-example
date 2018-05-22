@@ -1,5 +1,6 @@
-import { App, routes } from "./App";
-import { render } from "preact";
+import { render, h } from "preact";
+
+import { App, Routes } from "./App";
 
 render(
   <App>

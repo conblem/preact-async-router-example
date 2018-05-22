@@ -1,3 +1,5 @@
+import { h } from "preact";
+
 import { connect } from "./store";
 
 const Counter = ({ count, increment }) => (

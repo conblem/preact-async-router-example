@@ -7,13 +7,6 @@
         "pragma": "h"
       }
     ],
-    [
-      "jsx-pragmatic",
-      {
-        "module": "preact",
-        "import": "h"
-      }
-    ],
     "syntax-dynamic-import"
   ]
 }
