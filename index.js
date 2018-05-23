@@ -7,6 +7,7 @@ const readFile = promisify(require("fs").readFile);
 const render = require("preact-render-to-string");
 const { h } = require("preact");
 const { createMemoryHistory } = require("history");
+const expressStaticGzip = require("express-static-gzip");
 
 const { ssr } = require("preact-async-router");
 const { App, Routes, actions } = require("./dist/App.js");
@@ -15,6 +16,12 @@ const templateFile = join(__dirname, "index.template.html");
 let template;
 
 const staticPath = join(__dirname, "dist");
+server.use(
+  "/dist",
+  expressStaticGzip(staticPath, {
+    enableBrotli: true
+  })
+);
 server.use("/dist", express.static(staticPath));
 
 server.use(compression());
